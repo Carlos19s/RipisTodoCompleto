@@ -29,17 +29,22 @@
 
 .slash-abajo {
   animation-name:slideDesdeAbajo;
+  animation-duration: 0.5s;
 }
 
 .slash-izquierda {
   animation-name: slideDesdeIzquierda;
+  animation-duration: 1s;
 }
 .slash-derecha {
   animation-name: slideDesdeDerecha;
+  animation-duration: 1.5s;
 }
 .slash-arriba {
   animation-name: slideDesdeArriba;
+  animation-duration: 2s;
 }
+
 
 /* Keyframes */
 

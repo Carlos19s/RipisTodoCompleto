@@ -1,0 +1,32 @@
+.Contenedor{
+  display: grid;
+  grid-auto-rows: auto;
+}
+.Sobre_Nosotros{
+  width: 50%;
+  justify-items: center;
+  text-align: justify;
+  margin:auto;
+}
+.Mision-Vision{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6%;
+  margin:3%;
+  justify-content: center;
+  text-align: justify;
+}
+@media (max-width: 900px) {
+  .Sobre_Nosotros {
+    width: 80%;
+  }
+  .Mision-Vision{
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .Mision-Vision h2{
+    text-align: center;
+  }
+}
+
+

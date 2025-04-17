@@ -7,7 +7,6 @@
   align-items: center;
   box-sizing: inherit;
   position: relative;
-
 }
 
 .Navegacion {
@@ -235,5 +234,13 @@
     color: white;
   }
 }
-
-
+/*Agregado recientemente*/
+.submenu-box li{
+  text-align: center;
+}
+.submenu-box p{
+  color: darkcyan;
+}
+.submenu-box {
+  border-radius: 10px;
+}
