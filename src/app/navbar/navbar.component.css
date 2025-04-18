@@ -228,18 +228,17 @@
     margin-left:0%
   }
   .close-menu{
-    position: absolute;
+    position: relative;
     font-size: 20px;
     background: none;
     border: none;
     color: black;
-    left: 38%;
     cursor: pointer;
     padding: 10px 20px;
     font-weight: bold;
     transition: 0.3s;
     z-index: 999;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   .close-menu:hover {
