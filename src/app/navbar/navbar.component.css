@@ -142,7 +142,6 @@
   .menu-toggle {
     display: block !important;
     position: absolute;
-    top: -25%;
     right: 20%;
     z-index: 1000;
     font-size: 30px;
@@ -243,4 +242,23 @@
 }
 .submenu-box {
   border-radius: 10px;
+}
+.submenu-trigger a:hover{
+  cursor: pointer;
+}
+.Logos img{
+  height:80px;
+}
+.Logos img:hover{
+  cursor:pointer;
+}
+.Logos {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-left:20%;
+}
+.Logos a:hover{
+  cursor: pointer;
 }
