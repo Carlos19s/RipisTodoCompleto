@@ -4,12 +4,14 @@ import { ContactoComponent } from './contacto/contacto.component';
 import {InicioComponent} from './inicio/inicio.component';
 import {SobreNosotrosComponent} from './sobre-nosotros/sobre-nosotros.component';
 import {BeneficiosComponent} from './beneficios/beneficios.component';
+import {UnialiadasComponent} from './unialiadas/unialiadas.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'sobre-nosotros', component: SobreNosotrosComponent },
   {path: 'beneficios', component: BeneficiosComponent },
+  {path: 'Unialiadas', component: UnialiadasComponent },
 ];
 
 @NgModule({
