@@ -33,7 +33,7 @@
 
 .menu {
   list-style: none;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -261,4 +261,23 @@
 }
 .Logos a:hover{
   cursor: pointer;
+}
+.enlaces{
+  display: grid;
+  grid-template-columns:85% 15%;
+  align-items: center;
+  justify-items: center;
+}
+.BotonRegistro {
+  height: 35px;
+  font-size: 16px;
+  color: black;
+  background-color:rgba(213, 247, 148, 1) ;
+  border: 1px solid rgba(0, 0, 0, 0.5) ;
+  border-radius: 10px;
+}
+.BotonRegistro:hover {
+  cursor: pointer;
+  background-color: lightgreen ;
+  transition: 1s;
 }

@@ -33,11 +33,11 @@
 
       <li class="submenu-trigger Beneficios" (mouseenter)="mostrarSubmenu('Beneficios')"
           (mouseleave)="ocultarSubmenu('Beneficios')">
-        <a href="#">Beneficios</a>
+        <a>Beneficios</a>
         <ul class="submenu-box submenu-Beneficios" [style.opacity]="submenuActivo === 'Beneficios' ? '1' : '0'"
             [style.visibility]="submenuActivo === 'Beneficios' ? 'visible' : 'hidden'">
           <li class="opciones">
-            <a href="#">Beneficios de la red</a>
+            <a  (click)="redirigirConRecargaAngular('/beneficios')">Beneficios de la red</a>
             <a href="#">Conectividad</a>
           </li>
           <li class="opciones">
@@ -52,12 +52,12 @@
 
       <li class="submenu-trigger Publicaciones" (mouseenter)="mostrarSubmenu('Publicaciones')"
           (mouseleave)="ocultarSubmenu('Publicaciones')">
-        <a href="#">Blog RIPIS</a>
+        <a>Blog RIPIS</a>
       </li>
 
       <li class="submenu-trigger Comunidad" (mouseenter)="mostrarSubmenu('Comunidad')"
           (mouseleave)="ocultarSubmenu('Comunidad')">
-        <a href="#">Comunidad</a>
+        <a>Comunidad</a>
         <ul class="submenu-box submenu-Comunidad" [style.opacity]="submenuActivo === 'Comunidad' ? '1' : '0'"
             [style.visibility]="submenuActivo === 'Comunidad' ? 'visible' : 'hidden'">
           <li class="opciones">
@@ -69,14 +69,13 @@
             <a href="#">Comunidad de Rectores</a>
           </li>
           <li class="opciones opciones-ultimo">
-            <a href="#">Divulgación</a>
           </li>
         </ul>
       </li>
 
       <li class="submenu-trigger Eventos" (mouseenter)="mostrarSubmenu('Eventos')"
           (mouseleave)="ocultarSubmenu('Eventos')">
-        <a href="#">Eventos</a>
+        <a >Eventos</a>
         <ul class="submenu-box submenu-Eventos" [style.opacity]="submenuActivo === 'Eventos' ? '1' : '0'"
             [style.visibility]="submenuActivo === 'Eventos' ? 'visible' : 'hidden'">
           <li class="opciones">
@@ -102,8 +101,11 @@
           </li>
         </ul>
       </li>
-    </ul>
 
+    </ul>
+    <div >
+         <button class="BotonRegistro">Registro</button>
+    </div>
     <!-- Botón de cerrar menú solo visible cuando el menú está activo -->
     <button class="close-menu" *ngIf="menuVisible" (click)="toggleMenu()">Cerrar Menú</button>
   </section>
