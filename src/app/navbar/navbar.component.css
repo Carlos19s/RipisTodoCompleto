@@ -228,22 +228,22 @@
     margin-left:0%
   }
   .close-menu{
-    position: absolute;
+    position: relative;
     font-size: 20px;
     background: none;
     border: none;
     color: black;
-    left: 38%;
+    justify-items: center;
+    justify-content: center;
     cursor: pointer;
     padding: 10px 20px;
     font-weight: bold;
     transition: 0.3s;
     z-index: 999;
-    background-color: rgba(255, 0, 0, 0.5);
   }
 
   .close-menu:hover {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.1);
     color: white;
   }
   /*Agregado boton*/

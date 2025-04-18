@@ -10,7 +10,7 @@
   <section class="enlaces">
 
     <ul class="menu" [class.menu-active]="menuVisible">
-
+      <button class="close-menu" *ngIf="menuVisible" (click)="toggleMenu()">Cerrar Menú</button>
       <li class="submenu-trigger Acerca" (mouseenter)="mostrarSubmenu('Acerca')"
           (mouseleave)="ocultarSubmenu('Acerca')">
         <a >Acerca</a>
@@ -109,6 +109,6 @@
          <button class="BotonRegistro">Registro</button>
     </div>
     <!-- Botón de cerrar menú solo visible cuando el menú está activo -->
-    <button class="close-menu" *ngIf="menuVisible" (click)="toggleMenu()">Cerrar Menú</button>
+
   </section>
 </section>
