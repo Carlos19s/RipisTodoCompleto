@@ -14,8 +14,7 @@
       <button class="close-menu" *ngIf="menuVisible" (click)="toggleMenu()">X</button>
       <li class="submenu-trigger Acerca"
           *ngIf="!esDispositivoTactil"
-          (mouseenter)="mostrarSubmenu('Acerca')"
-          (mouseleave)="ocultarSubmenu('Acerca')">
+          (click)="mostrarSubmenu('Acerca')">
         <a >Acerca</a>
         <ul class="submenu-box submenu-Acerca" [style.opacity]="submenuActivo === 'Acerca' ? '1' : '0'"
             [style.visibility]="submenuActivo === 'Acerca' ? 'visible' : 'hidden'">
@@ -34,10 +33,10 @@
         </ul>
       </li>
 
-      <li class="submenu-trigger Acerca"
+      <li class="submenu-trigger Beneficios"
           *ngIf="!esDispositivoTactil"
-          (mouseenter)="mostrarSubmenu('Acerca')"
-          (mouseleave)="ocultarSubmenu('Acerca')">
+          (click)="mostrarSubmenu('Beneficios')">
+
         <a>Beneficios</a>
         <ul class="submenu-box submenu-Beneficios" [style.opacity]="submenuActivo === 'Beneficios' ? '1' : '0'"
             [style.visibility]="submenuActivo === 'Beneficios' ? 'visible' : 'hidden'">
@@ -55,17 +54,13 @@
         </ul>
       </li>
 
-      <li class="submenu-trigger Acerca"
-          *ngIf="!esDispositivoTactil"
-          (mouseenter)="mostrarSubmenu('Acerca')"
-          (mouseleave)="ocultarSubmenu('Acerca')">
+      <li class="submenu-trigger">
         <a>Blog RIPIS</a>
       </li>
 
-      <li class="submenu-trigger Acerca"
+      <li class="submenu-trigger Comunidad"
           *ngIf="!esDispositivoTactil"
-          (mouseenter)="mostrarSubmenu('Acerca')"
-          (mouseleave)="ocultarSubmenu('Acerca')">
+          (click)="mostrarSubmenu('Comunidad')">
         <a>Comunidad</a>
         <ul class="submenu-box submenu-Comunidad" [style.opacity]="submenuActivo === 'Comunidad' ? '1' : '0'"
             [style.visibility]="submenuActivo === 'Comunidad' ? 'visible' : 'hidden'">
@@ -82,10 +77,9 @@
         </ul>
       </li>
 
-      <li class="submenu-trigger Acerca"
+      <li class="submenu-trigger Eventos"
           *ngIf="!esDispositivoTactil"
-          (mouseenter)="mostrarSubmenu('Acerca')"
-          (mouseleave)="ocultarSubmenu('Acerca')">
+          (click)="mostrarSubmenu('Eventos')">
         <a >Eventos</a>
         <ul class="submenu-box submenu-Eventos" [style.opacity]="submenuActivo === 'Eventos' ? '1' : '0'"
             [style.visibility]="submenuActivo === 'Eventos' ? 'visible' : 'hidden'">
@@ -104,10 +98,9 @@
         </ul>
       </li>
 
-      <li class="submenu-trigger Acerca"
+      <li class="submenu-trigger Contacto"
           *ngIf="!esDispositivoTactil"
-          (mouseenter)="mostrarSubmenu('Acerca')"
-          (mouseleave)="ocultarSubmenu('Acerca')">
+          (click)="mostrarSubmenu('Contacto')">
         <ul class="submenu-box submenu-Contacto" *ngIf="submenuActivo === 'Contacto'">
           <li class="opciones">
 
