@@ -12,9 +12,7 @@
     <ul class="menu" [class.menu-active]="menuVisible">
       <!-- Botón de cerrar menú solo visible cuando el menú está activo -->
       <button class="close-menu" *ngIf="menuVisible" (click)="toggleMenu()">X</button>
-      <li class="submenu-trigger Acerca"
-          *ngIf="!esDispositivoTactil"
-          (mouseenter)="mostrarSubmenu('Acerca')"
+      <li class="submenu-trigger Acerca" (mouseenter)="mostrarSubmenu('Acerca')"
           (mouseleave)="ocultarSubmenu('Acerca')">
         <a >Acerca</a>
         <ul class="submenu-box submenu-Acerca" [style.opacity]="submenuActivo === 'Acerca' ? '1' : '0'"
@@ -105,11 +103,11 @@
         </ul>
       </li>
       <div class="BotonTelefonoRegistro">
-        <button class="BotonRegistro">Registro</button>
+        <button class="BotonRegistro" (click)="redirigirConRecargaAngular('/Registro')">Registro</button>
       </div>
     </ul>
     <div class="Contenedor-Boton">
-         <button class="BotonRegistro">Registro</button>
+      <button class="BotonRegistro">Registro</button>
     </div>
 
   </section>
