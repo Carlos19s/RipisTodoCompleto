@@ -1,17 +1,22 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {RouterLink} from '@angular/router';
+
 import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
   submenuActivo: string | null = null;
   menuVisible: boolean = false;
+  esDispositivoTactil: boolean = false;
+
+  constructor(private router: Router) {
+    this.esDispositivoTactil = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  }
 
   mostrarSubmenu(nombre: string) {
     this.submenuActivo = nombre;
@@ -23,17 +28,20 @@ export class NavbarComponent {
     }
   }
 
-  toggleMenu() {
-    this.menuVisible = !this.menuVisible; // Cambia el estado de visibilidad del menú
+  alternarSubmenu(nombre: string) {
+    this.submenuActivo = this.submenuActivo === nombre ? null : nombre;
   }
-  constructor(private router: Router) {}
+
+  toggleMenu() {
+    this.menuVisible = !this.menuVisible;
+  }
+
   redirigirConRecargaAngular(ruta: string) {
     this.menuVisible = false;
     this.submenuActivo = null;
-    this.router.navigate([ruta]).then(() => {
-    });
+    this.router.navigate([ruta]);
   }
-  images: string[] = [
-    'LogoRipis.png'
-  ];
+
+  images: string[] = ['LogoRipis.png'];
 }
+
