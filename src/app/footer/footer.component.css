@@ -1,13 +1,14 @@
-
-
 main {
-  flex-grow: 0; /* Hace que el contenido principal ocupe el espacio restante */
+  flex-grow: 1; /* Asegura que main se expanda */
 }
 
 .footer {
-  background: #fff;
-  padding: 40px 20px 20px;
-  margin-top: auto; /* Asegura que el footer se quede en la parte inferior */
+  background: #FFFAEC;
+  padding: 20px 10px;
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 1.4;
+  border-top: 1px solid #e0e0e0;
 }
 
 .footer-container {
@@ -16,48 +17,50 @@ main {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer-section {
-  flex: 1 1 300px;
+  flex: 1 1 200px;
 }
 
 .footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 6px;
   color: #222;
 }
 
 .footer-section p {
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.5;
   color: #444;
+  margin-bottom: 6px;
 }
 
 .footer-socials a {
-  margin-right: 10px;
-  font-size: 18px;
+  margin-right: 8px;
+  font-size: 16px;
   color: #1a1a1a;
 }
 
 .footer-links-columns {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .footer-links-columns ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-links-columns li {
-  font-size: 14px;
-  margin-bottom: 8px;
+  font-size: 13px;
+  margin-bottom: 5px;
   color: #555;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .footer-links-columns a {
@@ -75,22 +78,22 @@ main {
 }
 
 .footer-logo img {
-  max-width: 150px;
-  margin-top: 10px;
+  max-width: 100px;
+  margin-top: 5px;
   display: block;
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
   border-top: 1px solid #ccc;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
@@ -98,22 +101,40 @@ main {
 .footer-links a {
   color: #2c2c2c;
   text-decoration: none;
+  font-size: 13px;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 15px;
   }
+
+  .footer-section {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+
   .footer-links-columns {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 15px;
+    align-items: center;
   }
+
   .footer-logo img {
-    margin: auto;
+    margin: 10px auto;
+    max-width: 90px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+    padding: 8px;
   }
 }

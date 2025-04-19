@@ -19,14 +19,14 @@
             [style.visibility]="submenuActivo === 'Acerca' ? 'visible' : 'hidden'">
           <li class="opciones">
             <a (click)="redirigirConRecargaAngular('/sobre-nosotros')">Sobre Nosotros</a>
-            <a href="#">Nuestros Miembros</a>
+            <a (click)="redirigirConRecargaAngular('/Miembros')">Nuestros Miembros</a>
           </li>
           <li class="opciones">
             <a href="#">ODS</a>
             <a href="#">Registro Senecyt</a>
           </li>
           <li class="opciones opciones-ultimo">
-            <a href="#">Estatutos</a>
+            <a (click)="redirigirConRecargaAngular('/Estatutos')">Estatutos</a>
             <a href="#">Imagen Institucional</a>
           </li>
         </ul>

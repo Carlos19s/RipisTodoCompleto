@@ -1,0 +1,98 @@
+.miembros {
+  background-color: #ffffff;
+  color: #3d3d3d;
+  padding: 40px 20px;
+
+  animation: fadeIn 0.8s ease-in-out both;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #578e7e;
+  }
+
+  .universidad {
+    margin-bottom: 50px;
+
+    h2 {
+      color: #3d3d3d;
+      border-left: 5px solid #578e7e;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    .tarjetas-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .tarjeta {
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      color: #2c2c2c;
+      border-radius: 10px;
+      padding: 20px;
+      gap: 20px;
+      width: 48%;
+      box-sizing: border-box;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // ← la sombra elegante
+    transition: box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); // efecto sutil en hover
+      }
+    }
+
+    .tarjeta img {
+      width: 90px;
+      height: 90px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .tarjeta .info {
+      flex: 1;
+    }
+
+    .tarjeta .info p {
+      margin: 3px 0;
+    }
+
+    .tarjeta .logo-u {
+      width: 60px;
+      height: auto;
+    }
+    .tarjeta img,
+    .tarjeta .logo-u {
+      border: 2px solid #eee;
+    }
+
+
+  }
+
+  @media (max-width: 768px) {
+    .universidad .tarjeta {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    .tarjeta img,
+    .tarjeta .logo-u {
+      margin: 0 auto;
+    }
+  }
+}
