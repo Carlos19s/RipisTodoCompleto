@@ -1,0 +1,57 @@
+.Contenedor_Planificacion{
+  margin:auto;
+  width:75%;
+
+}
+.contenido{
+  display: grid;
+  grid-template-columns:25% 25% 25% 25%;
+  border:1px solid rgba(0, 0,0, 0.3);
+}
+.ContenidoGeneral{
+  border: 1px solid rgba(0, 0,0, 0.3);
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3px;
+}
+.ContenidoGeneral h2{
+  font-size: 16px;
+  color: #578e7e;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+.Actividad {
+  display: grid;
+  font-weight: bold;
+  align-content: center;
+  justify-items: center;
+}
+.ActividadTelefono{
+  opacity: 0;
+  position:absolute;
+}
+@media (max-width: 780px) {
+  .contenido{
+    display: grid;
+    grid-template-columns:none;
+
+  }
+  .Contenedor_Planificacion{
+    display: grid;
+    grid-auto-rows: auto;
+    gap:20px;
+  }
+  .Subtitulos .ContenidoGeneral{
+    display: none;
+  }
+  .ActividadTelefono{
+    position: relative;
+    opacity: 1;
+  }
+  .Subtitulos{
+    border: none;
+  }
+}
+

@@ -8,6 +8,7 @@ import {UnialiadasComponent} from './unialiadas/unialiadas.component';
 import {MiembrosComponent} from './miembros/miembros.component';
 import {EstatutosComponent} from './estatutos/estatutos.component';
 import { RegistroComponent } from './registro/registro.component';
+import {PlanificacionActividadesComponent} from './planificacion-actividades/planificacion-actividades.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -17,7 +18,8 @@ export const routes: Routes = [
   {path: 'Unialiadas', component: UnialiadasComponent },
   {path: 'Miembros', component: MiembrosComponent },
   {path: 'Estatutos', component: EstatutosComponent },
-  {path: 'Registro', component:  RegistroComponent}
+  {path: 'Registro', component:  RegistroComponent},
+  {path: 'Planificacion', component:  PlanificacionActividadesComponent},
 ]
 
 @NgModule({
