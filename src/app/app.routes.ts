@@ -11,6 +11,7 @@ import { RegistroComponent } from './registro/registro.component';
 import {PlanificacionActividadesComponent} from './planificacion-actividades/planificacion-actividades.component';
 import { BlogComponent } from './blog/blog.component';
 import { OdsComponent } from './ods/ods.component';
+import { ErrorComponent } from './error/error.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -23,7 +24,8 @@ export const routes: Routes = [
   {path: 'Registro', component:  RegistroComponent},
   {path: 'Planificacion', component:  PlanificacionActividadesComponent},
   {path: 'Blog', component: BlogComponent},
-  {path: 'Ods', component: OdsComponent}
+  {path: 'Ods', component: OdsComponent},
+  { path: '**', component: ErrorComponent }
 
 ]
 
