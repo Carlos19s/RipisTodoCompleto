@@ -260,37 +260,4 @@
   
   
   
-  /* Estilos para los elementos con la clase file-upload */
-  .file-upload {
-      font-size: 1.1em;
-      color: #333;
-      display: block;
-      margin-bottom: 10px;
-  }
-  
-  .file-upload[type="file"] {
-      padding: 12px;
-      border-radius: 8px;
-      border: 2px solid #ddd;
-      background-color: #f9f9f9;
-      font-size: 1em;
-      color: #333;
-      width: 100%;
-      margin-top: 5px;
-      cursor: pointer;
-      transition: border-color 0.3s ease;
-  }
-  
-  .file-upload[type="file"]:hover {
-      border-color: #4CAF50;
-  }
-  
-  .file-upload[type="file"]:focus {
-      outline: none;
-      border-color: #2980b9;
-  }
-  
-  .file-upload + br {
-      display: none;
-  }
   
