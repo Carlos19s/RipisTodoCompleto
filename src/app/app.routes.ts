@@ -10,6 +10,7 @@ import {EstatutosComponent} from './estatutos/estatutos.component';
 import { RegistroComponent } from './registro/registro.component';
 import {PlanificacionActividadesComponent} from './planificacion-actividades/planificacion-actividades.component';
 import { BlogComponent } from './blog/blog.component';
+import { OdsComponent } from './ods/ods.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -21,8 +22,9 @@ export const routes: Routes = [
   {path: 'Estatutos', component: EstatutosComponent },
   {path: 'Registro', component:  RegistroComponent},
   {path: 'Planificacion', component:  PlanificacionActividadesComponent},
-  {path: 'Blog', component: BlogComponent}
-  
+  {path: 'Blog', component: BlogComponent},
+  {path: 'Ods', component: OdsComponent}
+
 ]
 
 @NgModule({
