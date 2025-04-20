@@ -53,7 +53,7 @@
 
       <li class="submenu-trigger Publicaciones" (mouseenter)="mostrarSubmenu('Publicaciones')"
           (mouseleave)="ocultarSubmenu('Publicaciones')">
-        <a>Blog RIPIS</a>
+        <a (click)="redirigirConRecargaAngular('/Blog')">Blog RIPIS</a>
       </li>
 
       <li class="submenu-trigger Comunidad" (mouseenter)="mostrarSubmenu('Comunidad')"
@@ -103,11 +103,15 @@
         </ul>
       </li>
       <div class="BotonTelefonoRegistro">
-        <button class="BotonRegistro" (click)="redirigirConRecargaAngular('/Registro')">Registro</button>
+        <a class="BotonRegistro" (click)="redirigirConRecargaAngular('/Registro')">Registro</a>
       </div>
     </ul>
     <div class="Contenedor-Boton">
+<<<<<<< Updated upstream
       <button class="BotonRegistro">Registro</button>
+=======
+         <button class="BotonRegistro" (click)="redirigirConRecargaAngular('/Registro')">Registro</button>
+>>>>>>> Stashed changes
     </div>
 
   </section>

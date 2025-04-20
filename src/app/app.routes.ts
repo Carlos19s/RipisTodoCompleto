@@ -8,7 +8,11 @@ import {UnialiadasComponent} from './unialiadas/unialiadas.component';
 import {MiembrosComponent} from './miembros/miembros.component';
 import {EstatutosComponent} from './estatutos/estatutos.component';
 import { RegistroComponent } from './registro/registro.component';
+<<<<<<< Updated upstream
 import {PlanificacionActividadesComponent} from './planificacion-actividades/planificacion-actividades.component';
+=======
+import { BlogComponent } from './blog/blog.component';
+>>>>>>> Stashed changes
 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -19,7 +23,11 @@ export const routes: Routes = [
   {path: 'Miembros', component: MiembrosComponent },
   {path: 'Estatutos', component: EstatutosComponent },
   {path: 'Registro', component:  RegistroComponent},
+<<<<<<< Updated upstream
   {path: 'Planificacion', component:  PlanificacionActividadesComponent},
+=======
+  {path: 'Blog', component: BlogComponent}
+>>>>>>> Stashed changes
 ]
 
 @NgModule({
