@@ -5,12 +5,16 @@
   width:60%;
   margin:auto;
   padding:2%;
+  gap:10px;
+
 }
 .Info {
   display: grid;
   grid-auto-rows: auto;
   margin:0 10%;
-  height: min-content;
+  background-color: rgba(0,0,0,0.1);
+  padding:0 10%;
+  border-radius: 10px;
 }
 .Imagen_Contacto{
   display: grid;
@@ -91,11 +95,31 @@
     transform: translateY(0);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   .Contenedor{
     display: grid;
     grid-template-columns:none;
     grid-template-rows:1fr 1fr;
     margin:auto;
+  }
+  .Info {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.infor{
+  font-weight:bold;
+}
+.Imagen_Contacto a:hover{
+  cursor:pointer;
+}
+@media (max-width: 1400px) {
+  .Contenedor{
+    width:80%;
+  }
+}
+@media (max-width: 1400px) {
+  .Contenedor{
+    width:100%;
   }
 }
