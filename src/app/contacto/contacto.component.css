@@ -20,6 +20,7 @@
   display: grid;
   justify-items:center;
   align-items: center;
+
 }
 .informacion {
   opacity: 0;
@@ -122,4 +123,17 @@
   .Contenedor{
     width:100%;
   }
+}
+@media (max-width: 780px) {
+.Contenedor{
+  width:100%;
+  padding:2% 0;
+}
+  .Info{
+    width:78%;
+    margin:0;
+  }
+}
+.Imagen_Contacto img{
+  width:100%;
 }
