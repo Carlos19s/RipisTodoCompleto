@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-contacto',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterOutlet],
+  imports: [CommonModule,   RouterLink, RouterOutlet],
   templateUrl: './contacto.component.html',
   styleUrl: './contacto.component.css'
 })

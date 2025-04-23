@@ -20,7 +20,7 @@
           <li class="opciones">
             <a (click)="redirigirConRecargaAngular('/sobre-nosotros')">Sobre Nosotros</a>
             <a (click)="redirigirConRecargaAngular('/Miembros')">Nuestros Miembros</a>
-          </li> 
+          </li>
           <li class="opciones">
             <a (click)="redirigirConRecargaAngular('/Ods')">ODS</a>
             <a href="#">Registro Senecyt</a>
@@ -34,21 +34,8 @@
 
       <li class="submenu-trigger Beneficios" (mouseenter)="mostrarSubmenu('Beneficios')"
           (mouseleave)="ocultarSubmenu('Beneficios')">
-        <a>Beneficios</a>
-        <ul class="submenu-box submenu-Beneficios" [style.opacity]="submenuActivo === 'Beneficios' ? '1' : '0'"
-            [style.visibility]="submenuActivo === 'Beneficios' ? 'visible' : 'hidden'">
-          <li class="opciones">
-            <a  (click)="redirigirConRecargaAngular('/beneficios')">Beneficios de la red</a>
-            <a href="#">Conectividad</a>
-          </li>
-          <li class="opciones">
-            <a href="#">Seguridad</a>
-            <a href="#">Infraestructura</a>
-          </li>
-          <li class="opciones opciones-ultimo">
-            <a href="#">Multimedia</a>
-          </li>
-        </ul>
+        <a (click)="redirigirConRecargaAngular('/beneficios')">Objetivos</a>
+
       </li>
 
       <li class="submenu-trigger Publicaciones" (mouseenter)="mostrarSubmenu('Publicaciones')"
@@ -67,7 +54,6 @@
           </li>
           <li class="opciones">
             <a href="#">Blog</a>
-            <a href="#">Comunidad de Rectores</a>
           </li>
           <li class="opciones opciones-ultimo">
           </li>
@@ -85,7 +71,7 @@
           </li>
           <li class="opciones">
             <p>Programas</p>
-
+            <a (click)="redirigirConRecargaAngular('/perfil')"> PERFIL</a>
           </li>
           <li class="opciones">
             <p>Congresos</p>

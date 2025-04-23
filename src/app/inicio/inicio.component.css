@@ -299,18 +299,16 @@ p {
   display: flex; /* Usamos flexbox para que la imagen y el texto estén uno al lado del otro */
   justify-content: space-between; /* Espacio entre la imagen y el texto */
   align-items: center; /* Alineación vertical al centro */
-  padding: 50px;
+  padding: 100px;
 
-  background-color: #0d2e5d; /* Fondo de color oscuro */
+  background-color: #328E6E; /* Fondo de color oscuro */
   margin-top: 50px; /* Margen superior */
   color: white; /* Color blanco para el texto */
 }
 
 /* Estilo para la imagen */
 .newsletter-image {
-  width: 25%; /* La imagen ocupa el 40% del contenedor */
-
-
+  width: 35%; 
 }
 
 .news-img {
