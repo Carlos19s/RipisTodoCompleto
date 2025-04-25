@@ -14,6 +14,9 @@ import { OdsComponent } from './ods/ods.component';
 import { ErrorComponent } from './error/error.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import {IniciarSesionComponent} from './iniciar-sesion/iniciar-sesion.component';
+import {PrivacidadComponent} from './privacidad/privacidad.component';
+import {PrivacidadDeCoockiesComponent} from './privacidad-de-coockies/privacidad-de-coockies.component';
+import {PoliticaSeguridadComponent} from './politica-seguridad/politica-seguridad.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -29,6 +32,10 @@ export const routes: Routes = [
   { path: 'Ods', component: OdsComponent },
   { path: 'perfil', component: PerfilComponent },
   {path:'Iniciarsesion', component: IniciarSesionComponent },
+  {path:'privacidad',component: PrivacidadComponent },
+  {path:'coockies',component: PrivacidadDeCoockiesComponent },
+  {path: 'politicaSeguridad',component:PoliticaSeguridadComponent },
+
 
 
 
