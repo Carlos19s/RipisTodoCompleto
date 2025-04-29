@@ -1,17 +1,15 @@
 <!-- carousel.component.html -->
-<div class="carousel-container" (mousedown)="startDrag($event)" (mousemove)="onDrag($event)" (mouseup)="endDrag($event)"
-     (mouseleave)="endDrag($event)">
-  <!-- Imagen actual que se muestra -->
+<div class="carousel-container" #carouselElement (mousedown)="startDrag($event)" (mousemove)="onDrag($event)" (mouseup)="endDrag($event)" (mouseleave)="endDrag($event)">
   <div class="carousel-slide" [class.fade]="isFading">
     <img [src]="images[currentIndex]" alt="Imagen {{ currentIndex + 1 }}" draggable="false" />
   </div>
 
-  <!-- Botones de navegación -->
   <button (click)="prevImage()" class="prev-btn">&#10094;</button>
   <button (click)="nextImage()" class="next-btn">&#10095;</button>
 </div>
 
-<div class="stats-container">
+<!-- stats-container -->
+<div class="stats-container" #statsContainer>
   <div class="info">
     <p class="amount">+$10M</p>
     <p class="description">invertidos en fondos para Ciencia Tecnología e Innovación</p>
@@ -26,24 +24,22 @@
   </div>
 </div>
 
-<h1 class="title">TITULO DE RIPIS ORGANIZACIÓN</h1>
+<h1 class="title" #mapaCircular>TITULO DE RIPIS ORGANIZACIÓN</h1>
 
-<div class="MapaCircular">
+<!-- mapa circular -->
+<div class="MapaCircular" #mapaCircular>
   <div class="mapa">
     <img src="MapaCircular.png" alt="Mapa" class="mapa-img" draggable="false" />
   </div>
-
   <div class="redireccion">
     <fieldset class="cuadro">
       <legend class="leyenda">Redes de Conocimiento</legend>
       <p>Descripción de redes de conocimiento</p>
     </fieldset>
-
     <fieldset class="cuadro">
       <legend class="leyenda">Cultura de Innovación</legend>
       <p>Descripción de cultura de innovación</p>
     </fieldset>
-
     <fieldset class="cuadro">
       <legend class="leyenda">Transformación Digital</legend>
       <p>Descripción de transformación digital</p>
@@ -51,7 +47,8 @@
   </div>
 </div>
 
-<div class="newsletter">
+<!-- Newsletter -->
+<div class="newsletter" #newsletter>
   <div class="newsletter-image">
     <img src="news.svg" alt="Imagen de noticia" class="news-img" />
   </div>

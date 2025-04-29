@@ -108,6 +108,7 @@ button:hover {
   padding: 20px; /* Ajustamos el espaciado interno */
   margin: auto; /* Márgenes automáticos para centrar */
   flex-wrap: wrap; /* Permite que las cajas se ajusten cuando el espacio es reducido */
+  animation: desplazamiento 0.5s ease-in-out; /* Animación de desplazamiento */
 }
 
 /* Estilo para cada cuadro de información */
@@ -167,6 +168,7 @@ button:hover {
   display: flex; /* Usamos flexbox para colocar el mapa y las leyendas en una fila */
   justify-content: space-between; /* Espacio entre el mapa y las leyendas */
   padding: 5%; /* Espaciado alrededor del contenedor */
+  animation: desvanecer 1s ease-in-out; /* Animación de desvanecimiento */
 }
 
 /* Estilo para la imagen del mapa */
@@ -224,6 +226,7 @@ p {
   color: #0055b8; /* Color azul */
   text-align: center; /* Centrar el título */
   margin-bottom: 20px; /* Espaciado inferior */
+  animation: desplazamientoDerecha 0.8s ease-in-out; /* Animación de desplazamiento */
 }
 
 /* Media query para pantallas pequeñas (móviles) */
@@ -304,11 +307,13 @@ p {
   background-color: #328E6E; /* Fondo de color oscuro */
   margin-top: 50px; /* Margen superior */
   color: white; /* Color blanco para el texto */
+ 
 }
 
 /* Estilo para la imagen */
 .newsletter-image {
   width: 35%; 
+  animation:desvanecer 1.5s ease-in-out; /* Animación de desplazamiento */
 }
 
 .news-img {
@@ -321,6 +326,7 @@ p {
 .newsletter-text {
   width: 55%; /* El texto ocupa el 55% del contenedor */
   text-align: left; /* Alineamos el texto a la izquierda */
+  animation: desplazamientoDerecha 0.8s ease-in-out; /* Animación de desplazamiento */
 }
 
 /* Estilo para el título */
@@ -328,6 +334,7 @@ p {
   font-size: 36px; /* Tamaño grande para el título */
   font-weight: bold;
   margin-bottom: 20px;
+  
 }
 
 /* Descripción */
@@ -426,5 +433,39 @@ p {
     width: 100%; /* El botón ocupa el 100% en pantallas pequeñas */
     padding: 10px 0; /* Ajustar el padding en pantallas pequeñas */
     font-size: 14px; /* Reducir el tamaño del botón */
+  }
+}
+
+@keyframes desplazamiento {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes desplazamientoDerecha {
+  0% {
+      opacity: 0;
+      transform: translateX(200%);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes desvanecer {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
   }
 }

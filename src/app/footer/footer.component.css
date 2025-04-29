@@ -1,5 +1,6 @@
 main {
   flex-grow: 1; /* Asegura que main se expanda */
+  
 }
 
 .footer {
@@ -9,6 +10,7 @@ main {
   font-size: 14px;
   line-height: 1.4;
   border-top: 1px solid #e0e0e0;
+  
 }
 
 .footer-container {
@@ -18,6 +20,7 @@ main {
   max-width: 1200px;
   margin: auto;
   gap: 20px;
+  animation: desplazamiento 0.5s ease-in-out;
 }
 
 .footer-section {
@@ -136,5 +139,37 @@ main {
   .footer-bottom {
     font-size: 11px;
     padding: 8px;
+  }
+}
+@keyframes desplazamiento {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+@keyframes desplazamientoDerecha {
+  0% {
+      opacity: 0;
+      transform: translateX(1000%);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes desvanecer {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
   }
 }

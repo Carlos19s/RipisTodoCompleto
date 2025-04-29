@@ -76,4 +76,7 @@ export class InicioComponent {
   endDrag(event: MouseEvent): void {
     this.isDragging = false;
   }
+
+
+  
 }
